@@ -1,6 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Link } from 'react-router-dom'
-
 import './about.styles.css'
 
 export default function AboutMe() {
@@ -8,12 +6,11 @@ export default function AboutMe() {
         <div className="about-container">
             <img className='logo' src="../../assets/logo.png" alt="logo" />
             <div className="title">
-                Hi all, Welcome to My Digital Domain!
+                My name is Thanh Nhi Huynh
              </div>
             <div className="intro-container">
                 <div className="description">
-                Greetings and thank you for stepping into my digital realm. I am thrilled to invite you on a journey through my professional universe. As a goal-oriented Software Engineering Technology student specializing in Artificial Intelligence, this space is a curated showcase of my skills, experiences, and passion for innovation. Whether you're a fellow enthusiast, a potential collaborator, or a prospective employer, I encourage you to explore the dynamic tapestry of my capabilities, ranging from programming prowess to effective communication and adaptability within high-paced environments. Join me on this virtual adventure where technology meets creativity, and let's navigate the exciting landscape of software engineering together. Welcome, and enjoy the exploration!
-                <Link to="/about"> About Me</Link>
+                As a highly motivated and flexible professional, my story unfolds through experiences that have honed my ability to gather data, analyze information, and prepare comprehensive reports. Beyond the technical realm, discover a communicator adept at fostering strong relationships with diverse stakeholders. Fluent in English and Vietnamese, with conversational abilities in Cantonese, Mandarin, and Japanese, I am equipped to navigate global landscapes. This page delves into the intricacies of my understanding of Agile/Scrum development, offering insights into my collaborative approach and how I navigate the challenges of the software development life cycle. From programming proficiency to tool mastery, this is a narrative of a technologically adept individual poised to make a meaningful impact in the ever-evolving world of software engineering.
                 </div>
                 <img className="image" src="../../assets/profile.jpeg" alt="profile image" />
             </div>
