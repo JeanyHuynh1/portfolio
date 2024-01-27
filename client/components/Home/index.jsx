@@ -1,3 +1,9 @@
+import './home.styles.css'
+
 export default function Home() {
-    return  <p>Home Page</p>
+    return (
+        <div className="home-container">
+            <p>HOME PAGE</p>
+        </div>
+    )
 }

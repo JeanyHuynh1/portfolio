@@ -7,7 +7,7 @@ import Services from './components/Services'
 
 const MainRouter = () => {
     return (
-        <div className="">
+        <div>
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/about" element={<AboutMe />} />
