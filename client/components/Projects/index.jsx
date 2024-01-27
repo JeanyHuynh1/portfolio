@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import INFO from '../../data/info'
 import Project from './components/Project'
-import projects from './data/projects'
 import './projects.styles.css'
 
 export default function Projects() {
@@ -16,7 +16,7 @@ export default function Projects() {
                 </div>
             </div>
             <div className="all-projects-container">
-			{projects.map((project, index) => (
+			{INFO.projects.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
 						logo={project.logo}
