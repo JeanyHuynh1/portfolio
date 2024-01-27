@@ -5,9 +5,11 @@ import ContactMe from './components/ContactMe'
 import Projects from './components/Projects'
 import Services from './components/Services'
 
+import './MainRouter.styles.css'
+
 const MainRouter = () => {
     return (
-        <div>
+        <div className="router-container">
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/about" element={<AboutMe />} />
