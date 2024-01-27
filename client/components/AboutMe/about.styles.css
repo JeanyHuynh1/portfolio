@@ -1,4 +1,4 @@
-.home-container {
+.about-container {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -17,11 +17,21 @@
         display: flex;
         justify-content: space-between;
         .description {
-            width: 70%;
+            width: 50%;
             color: #65656d;
             font-size: 16px;
             line-height: 28px;
             text-align: justify;
+        }
+
+        .image {
+            overflow: hidden;
+            border-radius: 10%;
+            transform: rotate(3deg);
+            overflow-clip-margin: content-box;
+            overflow: clip;
+            width: 30%;
+            height: 30%;
         }
     }
 }

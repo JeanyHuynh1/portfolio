@@ -8,17 +8,13 @@ export default function Home() {
         <div className="home-container">
             <img className='logo' src="../../assets/logo.png" alt="logo" />
             <div className="title">
-                Hi all, I'm Jeany Thanh Nhi Huynh
-                <br />
-                Aspiring Software Developer
+                Hi all, Welcome to My Digital Domain!
              </div>
             <div className="intro-container">
                 <div className="description">
-                    Step into the dynamic world of a goal-oriented Software Engineering Technology student, specializing in Artificial Intelligence.
-                    The Home page is your gateway to a professional journey marked by motivation, flexibility, and an unwavering commitment to excellence within high-paced environments. As you explore this page, you'll witness a diverse skill set that spans the entire software development life cycle (SDLC) and includes proficiency in Python, C#, Java, Javascript, HTML/CSS, and database management with Oracle, SQL, and Microsoft Visio. Engage with the visual representation of my abilities, from data gathering and analysis to effective communication with diverse stakeholders. Welcome to a space where agility and Scrum development methodologies are not just concepts but integral parts of my professional ethos. This page encapsulates the essence of my technical prowess and adaptability, setting the stage for a deeper dive into my professional narrative.
-                    <Link to="/about"> About Me</Link>
+                Greetings and thank you for stepping into my digital realm. I am thrilled to invite you on a journey through my professional universe. As a goal-oriented Software Engineering Technology student specializing in Artificial Intelligence, this space is a curated showcase of my skills, experiences, and passion for innovation. Whether you're a fellow enthusiast, a potential collaborator, or a prospective employer, I encourage you to explore the dynamic tapestry of my capabilities, ranging from programming prowess to effective communication and adaptability within high-paced environments. Join me on this virtual adventure where technology meets creativity, and let's navigate the exciting landscape of software engineering together. Welcome, and enjoy the exploration!
+                <Link to="/about"> About Me</Link>
                 </div>
-                <img className="image" src="../../assets/profile.jpeg" alt="profile image" />
             </div>
         </div>
     )
