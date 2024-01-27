@@ -1,0 +1,45 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .title {
+        font-size: 45px;
+        font-weight: 700;
+        width: 70%;
+    }
+    .intro-container {
+        display: flex;
+        justify-content: space-between;
+        .description {
+            width: 70%;
+            color: #65656d;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: justify;
+        }
+    }
+
+    .all-projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: -35px;
+        margin-right: -35px;
+    }
+    
+    .all-projects-project {
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        padding: 10px;
+        overflow: hidden;
+    }
+    
+    @media (max-width: 600px) {
+        .all-projects-project {
+            width: calc(100% / 2);
+        }
+    }
+}
