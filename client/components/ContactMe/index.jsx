@@ -1,8 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
 import './contact.styles.css'
 
 export default function Contact() {
+    const [name, setName] = useState('');
+    const [contact, setContact] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     return (
         <div className="contact-container">
             <div className="title">
@@ -15,19 +21,35 @@ export default function Contact() {
             </div>
             <form action="" className="contact-form">
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required className="input-field" />
+            <input type="text" id="name" name="name" required className="input-field" onChange={event => setName(event.target.value)} />
 
             <label htmlFor="contactNumber">Contact Number:</label>
-            <input type="tel" id="contactNumber" name="contactNumber" required className="input-field" />
+            <input type="tel" id="contactNumber" name="contactNumber" required className="input-field" onChange={event => setContact(event.target.value)} />
 
             <label htmlFor="email">Email Address:</label>
-            <input type="email" id="email" name="email" required className="input-field" />
+            <input type="email" id="email" name="email" required className="input-field" onChange={event => setEmail(event.target.value)} />
 
             <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required className="textarea-field"></textarea>
+            <textarea id="message" name="message" rows="4" required className="textarea-field" onChange={event => setMessage(event.target.value)} />
 
-            <Link to='/'><button type="submit" className="submit-button">Submit</button></Link>
+            <button type="submit" className="submit-button" onClick={handleSubmitResume}>Submit</button>
             </form>
         </div>
     )
+
+    function handleSubmitResume() {
+        const queryString = `?name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`;
+
+        // Update the URL
+        window.history.pushState({}, '', queryString);
+
+        handleUpdateStates();
+    }
+
+    function handleUpdateStates() {
+        setName('');
+        setContact('');
+        setEmail('');
+        setMessage('');
+    }
 }
