@@ -7,6 +7,7 @@ import './projects.styles.css'
 export default function Projects() {
     return (
         <div className="projects-container">
+            <img className='logo' src="../../assets/logo.png" alt="logo" />
             <div className="title">
                 Things I’ve made trying to put my dent in the universe.
              </div>

@@ -7,6 +7,7 @@ import './services.styles.css'
 export default function Services() {
     return (
         <div className="services-container">
+            <img className='logo' src="../../assets/logo.png" alt="logo" />
             <div className="title">
                 Innovative Solutions for Modern Success
              </div>

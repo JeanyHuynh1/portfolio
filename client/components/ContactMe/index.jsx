@@ -11,6 +11,7 @@ export default function Contact() {
 
     return (
         <div className="contact-container">
+            <img className='logo' src="../../assets/logo.png" alt="logo" />
             <div className="title">
                 Let's Get Connected
              </div>
